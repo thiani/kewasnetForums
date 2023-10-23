@@ -1,0 +1,12 @@
+{% extends "spirit/_header.html" %}
+{% block custom_header_logo %}
+{% load static %}
+  <a
+    style="line-height: 3rem;font-size: 1.75rem;color: var(--st-header-logo);"
+    href="{% url "spirit:index" %}"
+  >
+  <img src="{% static 'spirit/images/avatar.png' %}" alt="Forum">
+ 
+  </a>
+  
+{% endblock %}

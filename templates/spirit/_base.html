@@ -1,0 +1,51 @@
+{% extends "spirit/_base.html" %}
+{% block custom_before_spirit_body %}
+{% load static %}
+  <div style="background-color: blue; color: black; text-align: center; height: 30px;">
+    <!-- Add any content or elements you want in the top bar here -->
+  </div>
+  <style>
+    .spirit .footer__logo {
+      display: none;
+    }
+    .spirit .logo {
+    width: 250px;
+    height: 50px;
+}
+
+    /* Customize the colors for the blue theme */
+    :root {
+      --st-text-prim: #5C5CFF; /* Main text color */
+      --st-text-sec: #5C5CFF;
+      --st-bg-prim: #FAF5EF; /* Main background color */
+      --st-bg-sec: #012700;
+      --st-bg-ter: #012100;
+      --st-bg-qua: #011a00;
+      --st-bg-qui: #FAF5EF;
+      --st-text-selected-prim: #5C5CFF;
+      --st-highlight-prim: #8A8AFF;
+      --st-text-button: var(--st-text-sec);
+      --st-bg-input: var(--st-bg-qui);
+      --st-bg-checkbox: black;
+      --st-bg-comment-user-admin: #979733;
+      --st-bg-comment-user-mod: #5C5CFF38;
+      --st-bg-comment-user-topic-owner: #2e658f;
+      --st-bg-message-info: var(--st-bg-qui);
+      --st-text-message-info: #000075;
+      --st-bg-message-error: #5e0000;
+      --st-bg-selection: white;
+      --st-text-selection: black;
+      --st-bg-unread: #13232f;
+      --st-bg-comment-diff-ins: #979733;
+      --st-bg-comment-diff-del: #5e0000;
+      
+      
+
+    }
+  </style>
+{% endblock %}
+{% block custom_after_spirit_body %}
+  <div style="background-color: blue; color: white; text-align: center; height: 30px;">
+    <!-- Add any content or elements you want at the bottom of the page here -->
+  </div>
+{% endblock %}
